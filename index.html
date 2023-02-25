@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML5 Editable Table</title>
+
+</head>
+<body>
+ <h1>Dashboard</h1>
+ <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+<div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr>
+        
+        <th> Student Name </th>  
+        <th> Student roll </th>  
+        <th> Subject</th>  
+        <th> Marks </th> 
+        <th> Marked by </th> 
+        <th> save </th>
+    </tr>
+    
+    <tr id="row1">
+    <td id="name_val">Avi</td>
+    <td id="student_roll">2020500</td>
+    <td id="subject">english</td> 
+    <td class="marks">95 </td>  
+    <td class="marked_by"> teacher </td>  
+    <td>
+    
+    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+    
+
+   
+   
+    
+    </table>
+    </div>
+        
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+   <script src="script.js"></script>
+</body>
+</html>
